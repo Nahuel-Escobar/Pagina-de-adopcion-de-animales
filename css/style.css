@@ -48,15 +48,22 @@ header nav div ul li{
     text-align: center;
 }
 
+.fa-paw {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 10px;
+}
+
 .titleText h1 {
     display: inline-block;
 }
 
-.titleText h1:hover{
+.titleText:hover{
     cursor: pointer;
     transform: scale(1.1);
     transition: all 0.5s ease;
 }
+
 /* Historia y biografia de la pagina */
 /* Estilo caja1 historia */
 .cajaHistoria {
@@ -68,7 +75,7 @@ header nav div ul li{
 }
 
 .cajaHistoria img {
-    width: 320px;
+    width: 40%;
     border-radius: 10px;
 }
 
@@ -92,7 +99,7 @@ header nav div ul li{
 }
 
 .cajaHistoria2 img {
-    width: 320px;
+    width: 40%;
     border-radius: 10px;
 }
 
@@ -104,6 +111,40 @@ header nav div ul li{
 .cajaHistoria2 p {
     font-size: 1rem;
     margin: 10px;
+}
+
+/* Media Queries Cajas de historia*/
+
+@media screen and (max-width: 568px) {
+    .cajaHistoria {
+        flex-direction: column;
+    }
+    
+    .cajaHistoria img {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .cajaHistoria p {
+        text-align: center;
+        font-size: 0.8rem;
+    }
+    
+    /* Estilo caja2 historia */
+    .cajaHistoria2 {
+        flex-direction: column;
+        margin: 20px 0px 0px 0px;
+    }
+    
+    .cajaHistoria2 img {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .cajaHistoria2 p {
+        text-align: center;
+        font-size: 0.8rem;
+    }    
 }
 
 /* texto para concientizar */
@@ -133,6 +174,25 @@ header nav div ul li{
     font-size: 0.6rem;
 }
 
+/* Media query texto concientizar*/
+@media screen and (max-width:768px) {
+    .concientizar {
+        margin: 10px 0px 50px 0px;
+    }
+
+    .tituloConcientizar {
+        margin: 40px 0px 0px 0px;
+    }
+    
+    .textoParaConcientizar {
+        margin: 10px 5px 5px 5px;
+    }
+
+    .subTextConcientizar {
+        font-size: 0.7rem;
+    }
+}
+
 /* aside */
 aside {
     background-color: rgb(239, 239, 239);
@@ -142,6 +202,7 @@ aside {
 
 /* Dandole estilo a las cards de adopción*/
 aside .card {
+    width: 60%;
     user-select: none;
     margin: 0 auto;
     margin-top: 20px;
@@ -170,6 +231,17 @@ aside .card:hover{
     }
     100%{
         transform: rotate(0deg);
+    }
+}
+
+/* Media query cards */
+@media screen and (max-width:768px) {
+    aside {
+        margin: 0px;
+    }
+    
+    .card {
+        width: 70%;
     }
 }
 
@@ -229,4 +301,49 @@ footer section .iconos .fa-twitter {
     cursor: pointer;
     color: orange;
     transition: all 0.4s ease;
+}
+
+/* Media query footer */
+@media screen and (max-width:468px) {
+    footer section h3 {
+        font-size: 0.7rem;
+    }
+
+    footer section .iconos a {
+        font-size: 0.9rem;
+    }
+
+    .parteDeNosotros h4{
+        font-size: 0.8rem;
+    }
+}
+
+
+
+
+/*-------MEDIA QUERY Grids-----*/
+@media screen and (max-width:768px){
+    .grid-container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 70px auto auto 100px;
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "aside aside"
+        "footer footer"
+        ;
+    }
+}
+
+@media screen and (max-width:468px){
+.grid-container{
+    grid-template-columns: 1fr;
+        grid-template-rows: 70px auto auto 100px;
+        grid-template-areas: 
+        "header"
+        "main"
+        "aside"
+        "footer"
+        ;
+    }
 }
