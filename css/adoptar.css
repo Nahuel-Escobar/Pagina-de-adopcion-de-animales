@@ -1,0 +1,246 @@
+/* Reseteo valores y agrego una fuente de texto */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+}
+
+
+/* Agrego el grid a la pagina */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 70px auto 90px;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer"
+    ;
+}
+
+/* Personalizo el navbar de bootstrap */
+.encabezado{
+    user-select: none;  
+    grid-area: header;
+    z-index: 1;
+}
+
+header nav div ul li{
+    margin-left: 30px;
+    font-size: 1.2rem;
+}
+
+/* Main */
+main{
+    grid-area: main;
+}
+
+/* Estilos a las cards de adopcion */
+
+section .title {
+    user-select: none;
+    margin: 20px;
+    text-align: center;
+}
+
+.title h1 {
+    display: inline-block;
+    font-size: 2rem;
+}
+
+.title h1:hover {
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    animation: rainbow 3.5s ease-in-out alternate-reverse infinite;
+}
+
+/* Icono de Huellas */
+
+.fa-paw {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 10px;
+}
+
+
+/* animacion ranibow al titulo  */
+
+@keyframes rainbow {
+    0%{
+        color: black;
+    }
+    15%{
+        color: rgba(255, 166, 0, 0.529);
+    }
+    30%{
+        color: rgba(255, 255, 0, 0.968);
+    }
+    45%{
+        color: rgba(0, 128, 0, 0.405);
+    }
+    60%{
+        color: rgba(0, 255, 255, 0.527);
+    }
+    75%{
+        color: rgba(0, 0, 255, 0.573);
+    }
+    90%{
+        color: rgba(238, 130, 238, 0.563);
+    }
+    100%{
+        color: rgba(128, 0, 128, 0.542);
+    }
+}
+
+
+/* Estilo de las cards para adoptar */
+.flex-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    user-select: none;
+}
+
+.card {
+    margin: 25px;
+    user-select: text;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+}
+
+.card:hover {
+    cursor: pointer;
+    animation: hurra 1.2s ease alternate-reverse infinite; 
+}
+
+/* Animacion para "Destacar" la card seleccionada */
+@keyframes hurra {
+    0%{ 
+        transform: scale(1) ; 
+    }
+    20%{ 
+        transform: scale(1.02);
+    }
+    40%{ 
+        transform: scale(1.04);
+    }
+    60%{ 
+        transform: scale(1.06);
+    }
+    80%{ 
+        transform: scale(1.08);
+    }
+    100%{
+        transform: scale(1.1);
+     }
+
+    
+}
+
+/* Footer */
+.pie{
+    grid-area: footer;
+    background-color: rgb(239, 239, 239);
+    margin-top: 10px;
+}
+
+/* texto copyright */
+footer section h3 {
+    user-select: none;
+    text-align: center;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    margin: 10px;
+}
+
+/* Iconos de contacto */
+footer section .iconos {
+    user-select: none;
+    padding: 10px;
+}
+
+footer section .iconos a {
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 1rem;
+}
+
+/* Color personalizado a los iconos */
+footer section .iconos .fa-whatsapp {
+    color: rgb(92, 222, 92);
+}
+
+footer section .iconos .fa-instagram {
+    color: rgb(214, 90, 255);
+}
+
+footer section .iconos .fa-twitter {
+    color: rgb(122, 188, 238);
+}
+
+/* Parte de nosotros texto*/
+.parteDeNosotros {
+    color: black;
+} 
+
+.parteDeNosotros h4{
+    display: inline;
+    float: right;
+    font-size: 1rem;
+}
+
+.parteDeNosotros:hover {
+    cursor: pointer;
+    color: orange;
+    transition: all 0.4s ease;
+}
+
+/* Media query footer */
+@media screen and (max-width:468px) {
+    footer section h3 {
+        font-size: 0.7rem;
+    }
+
+    footer section .iconos a {
+        font-size: 0.9rem;
+    }
+
+    .parteDeNosotros h4{
+        font-size: 0.8rem;
+    }
+}
+
+/*-------MEDIA QUERY Grids-----*/
+@media screen and (max-width:768px){
+    .grid-container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 70px auto 100px;
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer"
+        ;
+    }
+}
+
+@media screen and (max-width:468px){
+.grid-container{
+    grid-template-columns: 1fr;
+        grid-template-rows: 70px auto 100px;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+        ;
+    }
+}
