@@ -250,6 +250,7 @@ aside .card:hover{
     grid-area: footer;
     background-color: rgb(239, 239, 239);
     margin-top: 10px;
+    height: 100%;
 }
 
 /* texto copyright */
