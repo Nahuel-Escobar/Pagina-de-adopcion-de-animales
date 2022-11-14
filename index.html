@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>PreEntrega2+Escobar</title>
+</head>
+<body>
+    <div class="grid-container">
+        <!-- Navegador personalizado hecho con Bootstrap Responsive -->
+        <header class="encabezado">
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                  <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" alt="Logo" width="60px" height="35px">
+                  </a>
+                  <!-- Boton para desplegar el menu en modo tablet/mobile -->
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <!-- links para navegar en la pagina -->
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#huellas">Historia</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link actives" href="#">Adoptar</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Donar</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Apartado donde Pondre Una Biografia de La empresa "Huellas" -->
+        <main class="contenido">
+            <section>
+                <div class="titleText">
+                    <h1 id="huellas">Huellas</h1>
+                </div>
+                <div>
+                    <div class="cajaHistoria">
+                        <img src="img/foto-adopcion-historia-1.png" alt="Historia foto-adopcion-historia-1" class="imgHistoria1 img-fluid">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, alias dolore? Blanditiis magnam consequatur nam nihil cumque, maiores velit nobis! Et provident accusamus quasi nisi repellendus ex fuga animi ab.</p>
+                    </div>
+                    <div class="cajaHistoria2">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, alias dolore? Blanditiis magnam consequatur nam nihil cumque, maiores velit nobis! Et provident accusamus quasi nisi repellendus ex fuga animi ab.</p>
+                        <img src="img/Adopta-1.jpg" alt="Historia foto-adopcion-historia-1" class="imgHistoria1 img-fluid">
+                    </div>
+                </div>
+            <!-- Frase para Concientizar al usuario -->
+            </section>
+                <div class="container concientizar">
+                    <h3 class="tituloConcientizar">No lo olvides</h3>
+                    <div>
+                        <p class="textoParaConcientizar">Los animales no son propiedades o cosas, sino organismos vivientes, sujetos a una vida, que merecen nuestra compasión, respeto, amistad y apoyo. (Marc Bekoff)</p>
+                        <p class="subTextConcientizar">Los animales no son un adorno, son seres que sienten y padecen.</p>
+                    </div>
+                </div>
+            <section>
+            </section>
+        </main>
+        <!-- Apartado donde pondre cards para que "adopten" -->
+        <aside>
+            <!-- Card 1 -->
+            <div class="card mb-3 w-50">
+                <img src="img/the-red-or-white-cat-i-on-white-studio.jpg" class="card-img-top" alt="perro adopcion">
+                <div class="card-body">
+                  <h5 class="card-title">Arias</h5>
+                  <p class="card-text">un perro de 2 años, encontrado en situacion de calle hace 2 meses. Es energico y muy alegre, le gusta pasear en la plaza y jugar.</p>
+                  <p class="card-text"><small class="text-muted">Ultima actualizacion hace 1h</small></p>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="card mb-3 w-50">
+                <img src="img/wepik-photo-mode-20221013-23846.png" class="card-img-top" alt="perro en adopcion">
+                <div class="card-body">
+                  <h5 class="card-title">Yel</h5>
+                  <p class="card-text">El es Yel, tiene 4 años y es muy tranquilo, lo dieron en adopcion hace 3 meses por falta de espacio. El es muy protector y calmado, es ideal para una famila!</p>
+                  <p class="card-text"><small class="text-muted">Ultima actualizacion hace 10min</small></p>
+                </div>
+              </div>
+        </aside>
+        <footer class="pie">
+            <section>
+                <!-- Copyright -->
+                <h3>©Copyright 2022 Todos los derechos reservados</h3>
+                <!-- Iconos de contacto -->
+                <div class="iconos">
+                    <a href="https://whatsapp.com" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://facebook.com" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <!-- Texto para postularte o ser un Colobarador -->
+                    <a href="#" class="parteDeNosotros">
+                        <h4>
+                            Se parte de nosotros
+                        </h4>
+                    </a>
+                </div>
+            </section>
+        </footer>
+    </div>
+    <!-- Script de bootstrap e Iconos -->
+    <script src="https://kit.fontawesome.com/c8753d1bc8.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

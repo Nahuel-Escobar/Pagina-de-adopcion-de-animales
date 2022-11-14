@@ -1,0 +1,232 @@
+/* Reseteo valores y agrego una fuente de texto */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+}
+
+
+/* Agrego el grid a la pagina */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 70px auto 90px;
+    grid-template-areas: 
+    "header header header"
+    "main main aside"
+    "footer footer footer"
+    ;
+}
+
+/* Personalizo el navbar de bootstrap */
+.encabezado{
+    user-select: none;  
+    grid-area: header;
+    z-index: 1;
+}
+
+header nav div ul li{
+    margin-left: 30px;
+    font-size: 1.2rem;
+}
+
+/* Main */
+.contenido{
+    grid-area: main;
+}
+
+/* titulo */
+.titleText{
+    margin: 0 auto;
+    user-select: none;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.titleText h1 {
+    display: inline-block;
+}
+
+.titleText h1:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+/* Historia y biografia de la pagina */
+/* Estilo caja1 historia */
+.cajaHistoria {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px 0px 0px 20px;
+    user-select: none;
+}
+
+.cajaHistoria img {
+    width: 320px;
+    border-radius: 10px;
+}
+
+.cajaHistoria img:hover {
+    transform: scale(1.05);
+    transition: all 0.4s ease;
+}
+
+.cajaHistoria p {
+    font-size: 1rem;
+    margin: 10px;
+}
+
+/* Estilo caja2 historia */
+.cajaHistoria2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 100px 0px 0px 0px;
+    user-select: none;
+}
+
+.cajaHistoria2 img {
+    width: 320px;
+    border-radius: 10px;
+}
+
+.cajaHistoria2 img:hover {
+    transform: scale(1.05);
+    transition: all 0.4s ease;
+}
+
+.cajaHistoria2 p {
+    font-size: 1rem;
+    margin: 10px;
+}
+
+/* texto para concientizar */
+.concientizar:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+}
+
+.tituloConcientizar {
+    user-select: none;
+    margin: 90px 0px 0px 0px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.textoParaConcientizar{
+    user-select: none;
+    margin: 25px 10px 10px 10px;
+    text-align: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.subTextConcientizar {
+    user-select: none;
+    text-align: center;
+    font-size: 0.6rem;
+}
+
+/* aside */
+aside {
+    background-color: rgb(239, 239, 239);
+    grid-area: aside;
+    margin: 0px 0px 0px 20px;
+}
+
+/* Dandole estilo a las cards de adopción*/
+aside .card {
+    user-select: none;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/* Dandole una animacion */
+aside .card:hover{
+    cursor: pointer;
+    animation: cards 0.3s ease;
+}
+
+@keyframes cards {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    25%{
+        transform: rotate(5deg);
+    }
+
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-5deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+/* Footer */
+.pie{
+    grid-area: footer;
+    background-color: rgb(239, 239, 239);
+    margin-top: 10px;
+}
+
+/* texto copyright */
+footer section h3 {
+    user-select: none;
+    text-align: center;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    margin: 10px;
+}
+
+/* Iconos de contacto */
+footer section .iconos {
+    user-select: none;
+    padding: 10px;
+}
+
+footer section .iconos a {
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 1rem;
+}
+
+/* Color personalizado a los iconos */
+footer section .iconos .fa-whatsapp {
+    color: rgb(92, 222, 92);
+}
+
+footer section .iconos .fa-instagram {
+    color: rgb(214, 90, 255);
+}
+
+footer section .iconos .fa-twitter {
+    color: rgb(122, 188, 238);
+}
+
+/* Parte de nosotros texto*/
+.parteDeNosotros {
+    color: black;
+} 
+
+.parteDeNosotros h4{
+    display: inline;
+    float: right;
+    font-size: 1rem;
+}
+
+.parteDeNosotros:hover {
+    cursor: pointer;
+    color: orange;
+    transition: all 0.4s ease;
+}
