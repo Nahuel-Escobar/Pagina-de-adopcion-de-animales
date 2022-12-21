@@ -1,11 +1,8 @@
-# PreEntrega2+Escobar
-Entrega numero 2 de CoderHouse DesarroloWeb comision 33115
+# Pagina de adopcion de animales
 
-Alumno: Esteban Nahuel Escobar
+Esta pagina esta hecha con: Css3, Html5, Bootstrap v5.2 y Git
 
 Link a la pagina: https://nahuel-escobar.github.io/PreEntrega2-Escobar/#huellas
 
-
-Esta pagina esta hecha con: Css3, Html5, Bootstrap v5.2 y Git
 
 
